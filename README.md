@@ -6,20 +6,25 @@ An end-to-end data analytics project examining portfolio performance, borrower r
 
 ## 📌 Executive Summary & Key KPIs
 
-- **Total Applications:** 38,576
-- **Total Funded Capital:** $435.76M
-- **Total Capital Recovered:** $473.07M
-- **Average Interest Rate:** 12.05%
-- **Average DTI:** 13.31%
-- **Average Installment:** $326.08
+| Metric | Value | Business Impact |
+| :--- | :---: | :--- |
+| **Total Applications** | **38,576** | Portfolio overall volume |
+| **Total Funded Capital** | **$435.76M** | Total principal disbursed |
+| **Total Recovered Amount** | **$473.07M** | Net cash inflows generated |
+| **Average Interest Rate** | **12.05%** | Portfolio risk-adjusted yield |
+| **Average DTI Ratio** | **13.31%** | Borrower debt capacity indicator |
+| **Average Installment** | **$326.08** | Average monthly commitment |
 
 ---
 
-## 🛠️ Tech Stack
+## 🛠️ Tech Stack & Tools
 
-* **MySQL:** Data exploration, validation, aggregated KPIs, and credit risk analysis.
-* **Python (Pandas / Regex):** Dynamic string parsing for `emp_length` and numerical extraction.
-* **Power BI Desktop & DAX:** Interactive dashboard design and custom visual measures.
+| Tool / Tech | Usage & Core Contribution |
+| :--- | :--- |
+| **🛢️ MySQL** | Advanced queries, data validation, aggregations, and core risk analytics. |
+| **🐍 Python (Pandas / Regex)** | ETL pipeline, handling null values, and dynamic regex extraction for `emp_length`. |
+| **📊 Power BI Desktop** | Interactive multi-page dashboard, data modeling, and executive visual reporting. |
+| **📐 DAX Measures** | Dynamic time-intelligence KPIs, custom financial ratios, and dynamic filters. |
 
 ---
 
