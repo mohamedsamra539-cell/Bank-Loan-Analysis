@@ -19,18 +19,25 @@ The primary objective of this project is to provide a comprehensive banking inte
 ---
 
 ## 📊 Key Metrics & Core Insights
-- **Total Applications:** 38.58K
-- **Total Funded Amount:** $435.76M
-- **Total Received Amount:** $473.07M
-- **Average Interest Rate:** 12.05%
-- **Average DTI:** 13.3%
-- **Average Installment:** $326.08
-- **Charged Off Rate:** 13.82%
+
+| Metric | Value |
+| :--- | :--- |
+| **Total Applications** | 38.58K |
+| **Total Funded Amount** | $435.76M |
+| **Total Received Amount** | $473.07M |
+| **Average Interest Rate** | 12.05% |
+| **Average DTI** | 13.3% |
+| **Average Installment** | $326.08 |
+| **Charged Off Rate** | 13.82% |
 
 ---
 
 ## 📁 Repository Structure
+
 ```text
-├── scripts/                 # Python data cleaning & SQL analysis queries
 ├── Bank Loan Analysis.pbix  # Interactive Power BI report file
+├── Bank loan.ipynb          # Python data cleaning pipeline
+├── Bank_loan.csv            # Raw dataset
+├── bank_loan_clean.csv      # Processed dataset
+├── bank_loan.sql            # SQL queries for verification & KPIs
 └── README.md                # Project documentation
