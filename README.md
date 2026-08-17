@@ -1,49 +1,40 @@
 # Bank Loan & Credit Risk Analysis
 
-End-to-end data analysis project examining bank loan performance, borrower risk profiles, and loss drivers using MySQL and Power BI.
+An end-to-end data analysis project examining loan portfolio performance, borrower risk profiles, and default drivers using MySQL, Python, and Power BI.
 
 ---
 
-### Key Financial Metrics
-
-| Metric | Value |
-| :--- | :--- |
-| Total Applications | 38,576 |
-| Total Funded Capital | $435.76M |
-| Total Received Amount | $473.07M |
-| Average Interest Rate | 12.05% |
-| Average DTI Ratio | 13.31% |
-| Average Monthly Installment | $326.08 |
+## 📌 Executive Summary & Key Metrics
+* **total_loan_applications:** 38,576
+* **Total_funded_amount:** $435,757,075
+* **Total_amount_recieved:** $473,070,933
+* **Average_interest_rate:** 12.05%
+* **Avg_DTI:** 13.31%
+* **Avg_Installment:** $326.08
 
 ---
 
-### Tools Used
-
-* **MySQL:** Data validation, aggregation, and querying risk metrics.
-* **Python (Pandas & Regex):** Preprocessing data and cleaning employment lengths.
-* **Power BI:** Interactive reporting, data modeling, and DAX calculated metrics.
-
----
-
-### Risk Analysis & Key Findings
-
-* **Loan Status Breakdown:** 83.33% of loans are fully paid, while **13.82% were Charged Off**, representing direct loss.
-* **Credit Grade Risk:** Default rate increases as credit grade drops, with Grade G seeing the highest default rates.
-* **Loan Term Impact:** 60-month loans show a **22.40% default rate**, compared to **10.70%** for 36-month loans.
-* **DTI Impact:** Borrowers with a high DTI (>20%) reached a **15.59% default rate**, vs 11.99% for low DTI borrowers.
-* **Loan Purpose:** **Small business loans** are the highest risk category (**25.62% default rate**). **Debt consolidation** had the largest default volume (2,651 loans).
-* **Housing Status:** Renters represent the highest volume (18,439 loans) and highest default count (2,687 loans).
-* **Employment Length:** Data shows no significant correlation between employment length and default rate.
-* **Geographical Risk:** California had the highest total volume, while **Nevada recorded the highest default rate (20.95%)**.
-* **Seasonality:** Default rates peak slightly around May and December (~15%).
+## 🛠️ Tools Used
+* **MySQL:** Database querying, data aggregation, and credit risk validation.
+* **Python (Pandas):** Data cleaning, missing value handling, and string parsing.
+* **Power BI:** Data modeling, DAX measures, and interactive visual reporting.
 
 ---
 
-### Repository Files
+## 💡 Key Insights
+* **Loan Status:** 83.33% of loans are fully paid, while 13.82% are Charged Off.
+* **Loan Term:** 60-month loans carry a significantly higher default rate (22.4%) compared to 36-month loans (10.7%).
+* **Risk by Purpose:** Small business loans represent the highest risk category with a 25.62% default rate, while Debt Consolidation accounts for the largest absolute volume of defaults (2,651 loans).
+* **Borrower Profile:** Renters represent the highest volume of default cases (2,687 loans). High DTI borrowers default at a higher rate (15.59%) compared to Low DTI borrowers (11.99%).
+* **Location & Seasonality:** Nevada showed the highest default rate (20.95%), with charge-off rates peaking slightly around May and December (~15%).
 
-* `Bank Loan Analysis.pbix` — Power BI report file
-* `Bank loan.ipynb` — Python data preprocessing script
-* `Bank_loan.csv` — Raw dataset
-* `bank_loan_clean.csv` — Cleaned dataset
-* `bank_loan.sql` — MySQL analysis queries
-* `README.md` — Project documentation
+---
+
+## 📁 Repository Structure
+```text
+├── Bank Loan Analysis.pbix    # Power BI report file
+├── Bank loan.ipynb            # Python cleaning notebook
+├── Bank_loan.csv              # Raw dataset
+├── bank_loan_clean.csv        # Processed dataset
+├── bank_loan.sql              # Core MySQL analysis queries
+└── README.md                  # Project documentation
